@@ -1,31 +1,101 @@
-:root{--text:#334155;--muted:#64748b;--line:#e2e8f0;--accent:#1e3a8a;--bg:#e2e8f0}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.65}
-a{color:inherit;text-decoration:none}
-a:hover{text-decoration:underline}
-.site{max-width:1180px;margin:auto;padding:28px 42px 55px}
-nav{display:flex;gap:26px;align-items:center;border-bottom:1px solid var(--line);padding:0 0 22px;margin-bottom:34px}
-nav a{font-size:14px;color:#444}
-nav a.active{font-weight:700;color:#111}
-.layout{display:grid;grid-template-columns:240px 1fr;gap:58px}
-.sidebar{font-size:14px}
-.profile-photo{width:190px;height:190px;border-radius:4px;object-fit:cover;background:#f1f1f1;display:flex;align-items:center;justify-content:center;color:#999;font-size:13px;margin-bottom:18px}
-.name{font-size:25px;font-weight:600;margin:0 0 2px}
-.role{font-size:15px;color:#666;margin-bottom:14px}
-.meta{color:#666;margin:5px 0}
-.links{display:flex;flex-direction:column;gap:7px;margin-top:15px}
-.links a{color:#333}
-h1{font-size:27px;margin:0 0 16px;font-weight:600}
-h2{font-size:21px;margin:35px 0 12px;font-weight:600}
-h3{font-size:17px;margin:25px 0 5px}
-p{margin:0 0 14px}
-ul{padding-left:21px}
-li{margin:5px 0}
-.pub{padding:18px 0;border-top:1px solid var(--line)}
-.pub:first-child{border-top:0;padding-top:0}
-.pub-title{font-weight:600}
-.small{color:var(--muted);font-size:14px}
-footer{border-top:1px solid var(--line);margin-top:55px;padding-top:18px;color:#888;font-size:13px}
-.button{display:inline-block;border:1px solid #bbb;padding:7px 13px;border-radius:3px;margin-top:5px}
-@media(max-width:800px){.site{padding:20px}.layout{grid-template-columns:1fr;gap:25px}.profile-photo{width:150px;height:150px}nav{gap:16px;flex-wrap:wrap}}
+/* --- Modern Academic Theme for Adnan Khan --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@700&display=swap');
+
+:root {
+  --primary: #0f172a;
+  --accent: #1e40af;
+  --text: #334155;
+  --bg: #f8fafc;
+  --card: #ffffff;
+}
+
+body {
+  font-family: 'Inter', sans-serif !important;
+  background-color: var(--bg) !important;
+  color: var(--text) !important;
+  line-height: 1.8 !important;
+  font-size: 16px;
+}
+
+/* Navigation Bar */
+header, .navbar {
+  background: var(--card) !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  padding: 15px 0 !important;
+}
+
+header a, nav a {
+  font-weight: 600 !important;
+  color: var(--primary) !important;
+  text-decoration: none !important;
+  margin-right: 25px !important;
+  transition: 0.3s;
+}
+
+header a:hover, nav a:hover {
+  color: var(--accent) !important;
+}
+
+/* Left Sidebar - Profile Card */
+.author__avatar, div[style*="Add your photo"] {
+  border-radius: 12px !important;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h3, .author__name {
+  font-family: 'Merriweather', serif !important;
+  color: var(--primary) !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+}
+
+/* Welcome Section Card */
+.main-content, .page__content, .welcome-section {
+  background: var(--card) !important;
+  padding: 40px !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04) !important;
+  border: 1px solid #f1f5f9 !important;
+}
+
+h2 {
+  font-family: 'Merriweather', serif !important;
+  color: var(--primary) !important;
+  border-bottom: 3px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 20px !important;
+}
+
+/* Links - Email, Linkedin etc */
+a {
+  color: var(--accent) !important;
+}
+
+.sidebar a, li a {
+  display: block;
+  padding: 6px 0;
+  font-weight: 500;
+}
+
+/* Research Interests Box */
+ul {
+  background: #eff6ff;
+  padding: 20px 20px 20px 40px !important;
+  border-radius: 12px;
+  border-left: 4px solid var(--accent);
+}
+
+/* Photo Placeholder Fix */
+[style*="Add your photo"] {
+  background: #e2e8f0 !important;
+  border: 2px dashed #94a3b8 !important;
+  border-radius: 12px !important;
+  height: 220px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #64748b !important;
+}
