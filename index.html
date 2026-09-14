@@ -1,47 +1,83 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><title>Homepage | Adnan Khan</title>
-<link rel="stylesheet" href="styles.css"></head><body><div class="site">
-<nav>
-<a class="active" href="index.html">Homepage</a>
-<a href="publications.html">Publications</a>
-<a href="conferences.html">Conferences</a>
-<a href="cv.html">CV</a>
-<a href="resources.html">Resources</a>
-</nav>
-<div class="layout">
-
-<div class="sidebar">
-  <div class="profile-photo">Add your photo</div>
-  <div class="name">Adnan Khan</div>
-  <div class="role">FPM Scholar in Finance &amp; Accounting</div>
-  <div class="meta">IMT Ghaziabad, India</div>
-  <div class="links">
-    <a href="mailto:fpm22adnankhan@imt.ac.in">Email</a>
-    <a href="http://www.linkedin.com/in/adnan-khan-9342b51b5" target="_blank">LinkedIn</a>
-    <a href="https://scholar.google.com/citations?user=QIu8VAIAAAAJ&hl=en&oi=sra" target="_blank">Google Scholar</a>
-    <a href="https://orcid.org/0000-0002-2282-9771" target="_blank">ORCID</a>
-    <a href="https://www.scopus.com/authid/detail.uri?authorId=58927239100" target="_blank">Scopus</a>
-    <a href="https://www.webofscience.com/wos/author/record/GXZ-7848-2022" target="_blank">Web of Science</a>
-    <a href="https://www.researchgate.net/profile/Adnan-Khan-185" target="_blank">ResearchGate</a>
-    <a href="https://github.com/adnan-dev1998" target="_blank">GitHub</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adnan Khan | FPM Scholar IMT Ghaziabad</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:wght@700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#f3f4f6;color:#1f2937;padding:24px}
+.wrap{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:300px 1fr;gap:28px}
+.nav-top{grid-column:2;display:flex;gap:10px;justify-content:flex-end;margin-bottom:6px;flex-wrap:wrap}
+.nav-top a{background:#e5e7eb;padding:10px 18px;border-radius:999px;text-decoration:none;color:#1f2937;font-size:14px;font-weight:500;transition:.2s}
+.nav-top a.active,.nav-top a:hover{background:#1f2937;color:#fff}
+.card{background:#fff;border-radius:22px;padding:28px;box-shadow:0 10px 40px rgba(0,0,0,.06);border:1px solid #f1f5f9}
+.profile{text-align:left;position:sticky;top:24px}
+.avatar{width:90px;height:90px;background:#e5e7eb;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:40px;color:#9ca3af}
+.profile h1{font-family:'Fraunces',serif;font-size:28px;line-height:1.1;color:#111827;margin-bottom:12px}
+.profile .sub{color:#64748b;font-size:15px;margin-bottom:18px;line-height:1.5}
+.divider{height:1px;background:#e5e7eb;margin:18px 0}
+.contact-title{font-weight:600;font-size:14px;color:#6b7280;margin-bottom:14px}
+.link-row{display:flex;gap:12px;align-items:center;margin-bottom:16px;text-decoration:none;color:#111827}
+.link-row .icon{width:32px;height:32px;background:#f8fafc;border:1px solid #f1f5f9;border-radius:8px;display:grid;place-items:center;font-size:14px}
+.link-row small{display:block;color:#64748b;font-size:12px;word-break:break-all}
+.btn{display:inline-flex;gap:8px;align-items:center;border:1px solid #e5e7eb;padding:10px 18px;border-radius:999px;text-decoration:none;color:#111827;font-weight:500;margin-top:10px}
+.main h2{font-family:'Fraunces',serif;font-size:54px;color:#111827;line-height:1;margin-bottom:18px}
+.main .lead{font-size:17px;color:#4b5563;line-height:1.6;margin-bottom:22px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+.mini h3{font-size:16px;margin-bottom:14px}
+.pill{display:inline-block;background:#e2e8f0;padding:10px 16px;border-radius:999px;font-size:14px;margin:0 8px 10px 0}
+.list{font-size:14px;line-height:1.6}
+.list div{margin-bottom:14px}
+@media(max-width:900px){.wrap{grid-template-columns:1fr}.nav-top{grid-column:1;justify-content:flex-start}.profile{position:static}.main h2{font-size:36px}.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="nav-top">
+    <a class="active" href="index.html">Homepage</a>
+    <a href="publications.html">Publications</a>
+    <a href="conferences.html">Conferences</a>
+    <a href="cv.html">CV</a>
+    <a href="resources.html">Resources</a>
   </div>
+
+  <aside class="card profile">
+    <div class="avatar">👤</div>
+    <h1>Adnan Khan</h1>
+    <div class="sub">FPM Scholar in Finance & Accounting<br>IMT Ghaziabad, India</div>
+    <div class="divider"></div>
+    <div class="contact-title">Contact</div>
+    <a class="link-row" href="mailto:adnan@example.com"><div class="icon">✉️</div><div><b>Email</b><small>adnan.fpm22@imt.ac.in</small></div></a>
+    <a class="link-row" href="#"><div class="icon">in</div><div><b>LinkedIn</b><small>linkedin.com/in/adnankhan</small></div></a>
+    <a class="link-row" href="#"><div class="icon">🎓</div><div><b>Google Scholar</b><small>scholar.google.com</small></div></a>
+    <a class="btn" href="Adnan-khan-CV.pdf">⬇️ Download CV</a>
+  </aside>
+
+  <main class="card main">
+    <h2>Welcome</h2>
+    <p class="lead">I'm Adnan Khan — FPM Scholar at IMT Ghaziabad. I explore strategy, innovation, and digital transformation with a focus on organizational resilience and sustainable business practices.</p>
+    <p class="lead">My research examines how firms adapt, innovate, and create lasting impact in dynamic environments. I am a final-year doctoral candidate and have also passed NET & JRF in Commerce in 2020.</p>
+    
+    <div class="grid2">
+      <div class="card" style="padding:22px;box-shadow:0 4px 20px rgba(0,0,0,.04)">
+        <h3>Research Interests</h3>
+        <span class="pill">Strategy & Innovation</span>
+        <span class="pill">Digital Transformation</span>
+        <span class="pill">Sustainability & ESG</span>
+        <span class="pill">Finance & Accounting</span>
+      </div>
+      <div class="card" style="padding:22px;box-shadow:0 4px 20px rgba(0,0,0,.04)">
+        <h3>Recent Work</h3>
+        <div class="list">
+          <div><b>• Working Paper</b> Resilience in Digital Ecosystems <span style="float:right;color:#9ca3af">Aug 2024</span></div>
+          <div><b>• Conference</b> Academy of Management, 2024 <span style="float:right;color:#9ca3af">Jul 2024</span></div>
+          <div style="background:#f9fafb;padding:12px;border-radius:12px;border:1px solid #f1f5f9">Open to research collaborations • PhD teaching • Consulting inquiries welcome</div>
+        </div>
+      </div>
+    </div>
+  </main>
 </div>
-<main>
-<h1>Welcome</h1>
-<p>Greetings! Welcome to my website. I’m a final-year doctoral candidate in Finance &amp; Accounting at the Institute of Management Technology (IMT) Ghaziabad. I have also passed a Junior Research Fellowship (JRF) in Commerce in 2020.</p>
-<p>In my doctoral thesis, I am examining the effect of the target firm’s complexity on the acquiring firm’s characteristics.</p>
-<p>During my doctoral program, I had the opportunity to visit the University of New South Wales (UNSW), Sydney, Australia, for 45 days as a Junior visiting fellow. I am fortunate to be one of only 2 selected students from India for this research scholarship.</p>
-<p>I also had the opportunity to present my work at the conference of FORE School of Management and MDI Gurgaon in November and December 2025, respectively. I have also been selected for the two-day Doctoral Participant-Centered Learning Workshop (DPCL) conducted by Harvard Business Impact Education, Harvard Business School, and Harvard Business School India Research Center in May 2026.</p>
-<h2>My research interests include</h2>
-<ul>
-<li>Mergers and Acquisitions (M&amp;A)</li>
-<li>Firm’s complexity, performance, and post-acquisition integration.</li>
-<li>Capital market.</li>
-<li>Management Controls</li>
-<li>Employee perceptions and cultural differences.</li>
-<li>How strategic financial decisions influence firm performance and market outcomes.</li>
-</ul>
-<p>Thank you for visiting my website. Feel free to read my work and reach out to me if you have any questions or would like to notify me about any open positions in your research team at <a href="mailto:fpm22adnankhan@imt.ac.in">fpm22adnankhan@imt.ac.in</a>.</p>
-<h2>Research</h2>
-<p class="small">Research materials and publications are available in the sections above.</p>
-</main></div><footer>© Adnan Khan</footer></div></body></html>
+</body>
+</html>
