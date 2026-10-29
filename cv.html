@@ -1,30 +1,48 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><title>CV | Adnan Khan</title>
-<link rel="stylesheet" href="styles.css"></head><body><div class="site">
-<nav>
-<a class="active" href="index.html">Homepage</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV | Adnan Khan</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body{background:#f5f7fb;font-family:Inter,sans-serif;margin:0}
+.top-nav{max-width:1000px;margin:20px auto;background:#fff;padding:8px 12px;border-radius:30px;display:flex;gap:8px;box-shadow:0 2px 10px rgba(0,0,0,0.05)}
+.top-nav a{padding:8px 16px;border-radius:20px;text-decoration:none;color:#555;font-size:14px}
+.top-nav a.active{background:#111;color:#fff}
+.main{max-width:1000px;margin:20px auto;display:flex;gap:20px}
+.left{width:280px;background:#fff;padding:20px;border-radius:12px;text-align:center;height:fit-content}
+.right{flex:1;background:#fff;padding:40px;border-radius:12px;text-align:center}
+.btn{display:inline-block;margin-top:15px;background:#111;color:#fff;padding:12px 22px;border-radius:25px;text-decoration:none;font-weight:600}
+.btn:hover{background:#333}
+</style>
+</head>
+<body>
+
+<div class="top-nav">
+<a href="index.html">Homepage</a>
 <a href="publications.html">Publications</a>
 <a href="conferences.html">Conferences</a>
-<a href="cv.html">CV</a>
-</nav>
-<div class="layout">
-
-<div class="sidebar">
-  <div class="profile-photo">Add your photo</div>
-  <div class="name">Adnan Khan</div>
-  <div class="role">FPM Scholar in Finance &amp; Accounting</div>
-  <div class="meta">IMT Ghaziabad, India</div>
-  <div class="links">
-    <a href="mailto:fpm22adnankhan@imt.ac.in">Email</a>
-    <a href="http://www.linkedin.com/in/adnan-khan-9342b51b5" target="_blank">LinkedIn</a>
-    <a href="https://scholar.google.com/citations?user=QIu8VAIAAAAJ&hl=en&oi=sra" target="_blank">Google Scholar</a>
-    <a href="https://orcid.org/0000-0002-2282-9771" target="_blank">ORCID</a>
-    <a href="https://www.scopus.com/authid/detail.uri?authorId=58927239100" target="_blank">Scopus</a>
-    <a href="https://www.webofscience.com/wos/author/record/GXZ-7848-2022" target="_blank">Web of Science</a>
-    <a href="https://www.researchgate.net/profile/Adnan-Khan-185" target="_blank">ResearchGate</a>
-    <a href="https://github.com/adnan-dev1998" target="_blank">GitHub</a>
-  </div>
+<a href="cv.html" class="active">CV</a>
 </div>
-<main>
-<h1>CV</h1>
-<p>Download CV here.</p>
+
+<div class="main">
+<div class="left">
+<div style="width:80px;height:80px;background:#111;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:700;margin:0 auto">AK</div>
+<div style="margin-top:12px;font-weight:700">Adnan Khan</div>
+<div style="font-size:13px;color:#666">FPM Scholar in Finance & Accounting<br>IMT Ghaziabad, India</div>
+</div>
+
+<div class="right">
+<h1 style="margin:0">CV</h1>
+<p style="margin-top:20px">You can download my CV here.</p>
+
+<!-- YEHI SE DOWNLOAD HOGA -->
+<a href="cv.pdf" class="btn" download>📄 Download CV (PDF)</a>
+<p style="font-size:12px;color:#888;margin-top:12px">File: cv.pdf - Agar naam alag hai to cv.pdf ki jagah apni file ka naam likh do</p>
+
+</div>
+</div>
+
+</body>
+</html>
